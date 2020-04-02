@@ -1,0 +1,172 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: beige;
+}
+header {
+    width: 100%;
+    background-color: #fff8dc;
+    text-align: center;
+    font-family: Arial;
+    font-size: 2rem;
+
+}
+
+.navigl {
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.navigr {
+    margin-right: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+nav {
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-top: 5px;
+
+}
+
+.info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    width: 100%;
+    font-size: 1vw;
+
+}
+
+.fullka {
+    display: flex;
+    width: 100%;
+}
+
+.left {
+    flex: 0.3;
+    background-color: maroon;
+
+
+}
+
+.stred {
+    flex: 1.5;
+
+    padding: 0% 5% 0% 5%;
+    text-align: justify;
+    background-color: #f0ead6;
+    font-family: Arial;
+
+
+}
+.right {
+    flex: 0.3;
+    background-color: maroon;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .left, .right {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .odsek, .olist, h2 {
+        font-size: 1vw;
+    }
+    .wikitable {
+        font-size: 1vw;
+    }
+}
+
+footer {
+    margin: 20px;
+    display: inline;
+
+}
+
+.imgmain {
+    width: 100%;
+}
+.ulist {
+    font-size: max(1vw,15px);
+}
+
+h1 {
+    color: saddlebrown;
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1rem;
+    font-family: Arial;
+    color: grey;
+    margin: 0;
+    display: inline;
+    padding: 0;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+
+svg {
+    border: 3px solid #f0ead6;
+    display: block;
+    margin: 1em auto;
+}
+
+#wiki {
+    width: 90%;
+    font-size: 1rem;
+}
+.wikitable {
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #222;
+    border: 3px solid black;
+    border-collapse: collapse;
+    transform: skewX(178deg);
+
+}
+td {
+    border: black solid 1px;
+
+}
+th {
+    border: #222222 solid 1px;
+    border-bottom: #222222 solid 2px;
+}
+.backmm {
+    margin: 20px;
+    background-color: darkgray;
+    border: solid 1px red;
+    color: black;
+    font-family: Arial;
+    font-style: italic;
+}
+.odsek {
+    font-size: max(1rem,15px);
+}
+
+@media only screen and (max-width: 800px) {
+    svg {
+        display: none;
+    }
+    .wikitable {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}

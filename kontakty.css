@@ -1,0 +1,117 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: beige;
+    font-family: Arial;
+}
+
+header {
+
+    background-color: #fff8dc;
+    text-align: center;
+    font-family: Arial;
+    font-size: 2em;
+
+}
+
+.navigl {
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.navigr {
+    margin-right: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+nav {
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-top: 5px;
+}
+
+.fullka {
+    display: flex;
+    width: 100%;
+}
+.info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    width: 72%;
+    font-size: 1em;
+
+}
+.left {
+    flex: 0.3;
+    background-color: maroon;
+
+
+}
+
+.stred {
+    flex: 1.5;
+
+    padding: 0% 5% 0% 5%;
+    text-align: left;
+    background-color: #f0ead6;
+    font-family: Arial;
+
+
+}
+.odsek {
+    font-size: 1em;
+}
+
+.right {
+    flex: 0.3;
+    background-color: maroon;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .left, .right {
+        display: none;
+    }
+}
+
+.odsek {
+    font-size: 1em;
+    display: block;
+}
+span {
+    display: block;
+}
+
+footer {
+    margin: 20px;
+    display: inline;
+
+}
+h1 {
+    color: saddlebrown;
+}
+h2 {
+    font-size: small;
+    font-family: Arial;
+    color: grey;
+    margin: 0;
+    display: inline;
+    padding: 0;
+}
+
+.backmm {
+    margin: 20px;
+    background-color: darkgray;
+    border: solid 1px red;
+    color: black;
+    font-family: Arial;
+    font-style: italic;
+}

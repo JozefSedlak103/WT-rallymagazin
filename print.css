@@ -1,0 +1,21 @@
+html, body {
+    background-color: white;
+}
+
+footer {
+    display: none;
+}
+
+img {
+    display: none;
+}
+
+.imgmain .imgright .imgleft .imgleft {
+    display: none;
+}
+
+th, td {
+    border: 1px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <link href="sensorplay.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Sensor play</title>
+</head>
+<body onload="init()">
+<canvas id="can" width="500" height="500"> </canvas>
+<div id="napis">Tu kresli</div>
+<div id="choose">Vyber si farbu</div>
+<div id="green" onclick="color(this)"></div>
+<div id="blue" onclick="color(this)"></div>
+<div id="red" onclick="color(this)"></div>
+<div id="yellow" onclick="color(this)"></div>
+<div id="orange" onclick="color(this)"></div>
+<div id="black" onclick="color(this)"></div>
+<div id="eraser">Eraser</div>
+<div id="white" onclick="color(this)"></div>
+<input type="button" value="HrubÅ¡ie" id="larger" size="30" onclick="lineSize('larger')">
+<input type="button" value="TenÅ¡ie" id="smaller" size="30" onclick="lineSize('smaller')">
+<img id="canvasimg" alt="" src="">
+<input type="button" value="UloÅ¾(zobrazÃ­ sa napravo)" id="btn" size="30" onclick="save()" >
+<input type="button" value="Reset" id="clr" size="23" onclick="erase()" >
+<script src="js/sensors.js" type="text/javascript"></script>
+</body>
+</html>

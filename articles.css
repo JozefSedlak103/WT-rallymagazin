@@ -1,0 +1,210 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: beige;
+    font-family: Arial;
+}
+
+@media (max-width: 450px) {
+    #secondary {clear: both;}
+}
+
+header {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #006600;
+    border-bottom: black solid 5px;
+    border-top: black solid 5px;
+}
+
+.navigl {
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.navigr {
+    margin-right: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+nav {
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+}
+
+
+.info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    width: 100%;
+    font-size: 1em;
+
+}
+
+.nadpis {
+
+
+
+}
+
+.fullka {
+    display: flex;
+    width: 100%;
+}
+.left {
+    flex: 0.1;
+}
+.stred {
+    flex: 2.8;
+}
+
+.form {
+    display: block;
+    margin-top: 10rem;
+    text-align: center;
+    border: 3px solid black;
+
+}
+.formin {
+    display: block;
+    right: 50%;
+
+}
+#upoz {
+    font-size: 0.8rem;
+}
+#sposob {
+    text-align: initial;
+    padding-left: 40%;
+}
+
+.polia {
+    margin-bottom: 3px;
+}
+#nazor {
+    margin-bottom: 1rem;
+}
+#opinions {
+    border: 3px solid black;
+    margin-top: 5px;
+}
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+.right {
+    flex: 0.1;
+}
+h1 {
+    color: white;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+h2 {
+    font-size: small;
+    color: grey;
+    margin-top: 0px;
+    display: inline;
+}
+h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    font-size: large;
+
+}
+h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+.nextto {
+    display: flex;
+    width: 100%;
+}
+
+button {
+    font-size: larger;
+}
+p1 {
+    margin: auto;
+    text-align: justify;
+    display: block;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+#logo {
+    width: 1em;
+    margin-right: 5px;
+
+}
+.imgmain {
+    display: block;
+    width: 100%;
+
+}
+
+.tooltipdiv {
+    flex: 0.5;
+    max-width: 600px;
+    transition: transform .2s;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltipdiv:hover {
+    transform: scale(1.04);
+    z-index: 999;
+}
+
+.botleft {
+    font-family: Arial;
+    font-size: 1rem;
+    color: white;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
+.imgmain01 {
+    display: block;
+    width: 100%;
+}
+
+.WRCdiv {
+    position: relative;
+    margin-left: 10px;
+    flex: 0.5;
+    max-width: 355px;
+}
+.textinpic {
+    transition: transform .2s;
+    position: relative;
+    margin-bottom: 10px;
+}
+.textinpic:hover {
+    transform: scale(1.06);
+    z-index: 999;
+}
+.textinpic2:hover {
+    transform: scale(1.06);
+    z-index: 999;
+}
+.textinpic2 {
+    transition: transform .2s;
+    position: relative;
+}

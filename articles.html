@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>SlovenskÃ½ rally magazÃ­n</title>
+    <link href="articles.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="print.css" media="print" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+    <div class="nadpis">
+        <h1><img id="logo" src="images/1280px-Flag_of_Slovakia.svg.png" alt="SVKlogo">Rally magazÃ­n<br></h1>
+    </div>
+
+</header>
+
+
+
+<nav>
+    <span class="navigl"><a href="articles.html">Domov</a></span>
+    <span class="navigs"><a href="sensorplay.html">Senzory</a> </span>
+    <span class="navigr"><a href="kontakty.html">Kontakt</a></span>
+    <form>
+        <input type="search" name="q" placeholder="VyhÄ¾adaÅ¥">
+        <input type="submit" value="PrejsÅ¥">
+    </form>
+</nav>
+
+
+
+<div class="fullka">
+    <div class="left">
+
+    </div>
+
+    <div class="stred">
+        <div class="info">
+            <h4>Blog venovanÃ½ nadÅ¡encom motoÅ¡portu a rally priaznivcom.</h4>
+        </div>
+
+        <div class="nextto">
+            <div class="tooltipdiv" onclick="window.location.href = 'article1.html'">
+                <a href="#" data-toggle="tooltip" title="Legenda historickÃ½ch rally, agregÃ¡ty, sÃºÅ¥aÅ¾e">
+                    <img class="imgmain" src="images/alpine-a110-mainpage.jpg" alt="alpine_mainpage" onclick="window.location.href = 'article1.html'"></a>
+                    <h3 class="botleft">Renault Alpine A110</h3>
+            </div>
+
+            <div class="WRCdiv">
+                <div class="textinpic" onclick="window.location.href = 'article2.html'">
+                    <a href="#" data-toggle="tooltip" title="SÃºÅ¥aÅ¾nÃ© skupiny, histÃ³ria rally">
+                        <img class="imgmain01" src="images/wrc_mainpage.jpg" alt="wrc_main" onclick="window.location.href = 'article2.html'"></a>
+                        <h3 class="botleft">HistÃ³ria WRC</h3>
+                </div>
+
+                <div class="textinpic2" onclick="window.open('article3.html','_blank')">
+                    <a href="#" data-toggle="tooltip" title="SpÃ´sobilosÅ¥, hodnotenia, ustanovenia">
+                        <img class="imgmain01" src="images/skoda_jump.jpg" alt="skoda_jump" onclick="window.open('article3.html','_blank')"></a>
+                        <h3 class="botleft">MajstrovstvÃ¡ SR v rally</h3>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="form">
+            <div class="formin">
+                <form id="formular">
+                <p id="nazor"> PoÅ¡lite nÃ¡m VÃ¡Å¡ nÃ¡zor.</p>
+                <input type="text" id="meno" class="polia" name="meno" size="50" placeholder="Meno *" required maxlength="13" minlength="3" > <br>
+                <input type="email" id="email" class="polia" name="email" placeholder="E-mail *" size="50" required> <br>
+                <input type="url" name="url" id="url" class="polia" placeholder="ObrÃ¡zok {vloÅ¾te URL obrÃ¡zka}" size="50"> <br>
+                    <input type="text" id="kluc" name="kluc" class="polia" size="50" placeholder="KÄ¾ÃºÄovÃ© slovo (ktorÃ½m by Ste popÃ­sali tÃºto strÃ¡nku)"><br>alebo<br>
+                    <input list="zoznam-popisov" id="popisy" name="popisy" placeholder="alebo vyberte z uÅ¾ vytvorenÃ½ch" size="50" />
+
+                    <datalist id="zoznam-popisov">
+
+                    </datalist>
+                <div id="sposob">
+                <div>
+                    <input type="radio" class="radiob" id="pochvala" name="typ" value="pochvala"
+                           checked>
+                    <label for="pochvala">Pochvala :)</label>
+                </div>
+                <div>
+                    <input type="radio" class="radiob" id="kritika" name="typ" value="kritika"
+                           >
+                    <label for="kritika">KonÅ¡truktÃ­vna kritika</label>
+                </div>
+                    <div>
+                        <input type="radio" class="radiob" id="otazka" name="typ" value="otazka"
+                        >
+                        <label for="otazka">OtÃ¡zka</label>
+                    </div>
+                <div>
+                    <input type="radio" class="radiob" id="staznost" name="typ" value="staznost"
+                           >
+                    <label for="staznost">SÅ¥aÅ¾nosÅ¥</label>
+                </div>
+                </div>
+                    <textarea id="hltext" name="hltext" placeholder="Miesto pre VaÅ¡u sprÃ¡vu *" rows="10" cols="47" required></textarea>
+                <div>
+                    <input type="checkbox" id="upozornenia" name="upozornenia"
+                           checked>
+                    <label id="upoz" for="upozornenia">Novinky na e-mail.</label>
+                </div>
+                <button id="tlsubmit"
+                        type="submit">
+                    OdoslaÅ¥ sprÃ¡vu
+                </button>
+                <button id="tlreset"
+                        type="reset">
+                    Reset
+                </button>
+
+                </form>
+            </div>
+        </div>
+        <div id="opinions">
+            <h3>NÃ¡zory ÄitateÄ¾ov (berte s nadhÄ¾adom)</h3><br>
+            <div id="kontajnerNazorov">
+
+            </div>
+            <button onclick="oldata()" id="denstare">VymaÅ¾(starÅ¡ie ako 24h)</button>
+        </div>
+    </div>
+
+
+
+    <div class="right">
+
+    </div>
+
+</div>
+
+
+
+<footer>
+    <p style="float: right">
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss"
+                 alt="OvÄÅit CSS!" />
+        </a>
+    </p>
+</footer>
+
+
+<script id="mTmplOneOpinion" type="text/template">
+    <section>
+        <h3>{{name}} <i>{{createdDate}}</i></h3>
+        <p>{{comment}}</p>
+    </section>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"
+        integrity="sha256-MPgtcamIpCPKRRm1ppJHkvtNBAuE71xcOM+MmQytXi8="
+        crossorigin="anonymous">
+</script>
+<script src="js/articlesopinions.js">
+function oldata() {
+    var cas;
+    for (var i = 0;i<opinions.length;i++) {
+        cas = Date.now() - new Date(opinions[i].created);
+        if(cas>=86400000) {
+            opinions.splice(i,1);
+        }
+    }
+    localStorage.myCarsComments = JSON.stringify(opinions);
+    opinionsElm.innerHTML=opinionArray2html(opinions);
+}
+</script>
+</body>
+</html>

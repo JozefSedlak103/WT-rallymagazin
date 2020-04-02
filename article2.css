@@ -1,0 +1,176 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: beige;
+}
+header {
+
+    background-color: #fff8dc;
+    text-align: center;
+    font-family: Arial;
+    font-size: max(2vw,15px);
+    animation-duration: 3s;
+    animation-name: slidein;
+
+}
+
+.navigl {
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.navigr {
+    margin-right: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+nav {
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: unset ;
+    padding-right: unset;
+
+    padding-top: 5px;
+    width: 100%;
+    font-size: max(1vw,15px);
+
+}
+
+.fullka {
+    display: flex;
+    width: 100%;
+}
+.info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    width: 100%;
+
+}
+.left {
+    flex: 0.3;
+    background-color: maroon;
+
+
+}
+
+.stred {
+    flex: 1.5;
+
+    padding: 0% 5% 0% 5%;
+    text-align: justify;
+    background-color: #f0ead6;
+    font-family: Arial;
+
+
+}
+.odsek {
+    font-size: max(1vw,15px);
+
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.olist {
+    padding-left: 3%;
+    font-size: 1vw;
+
+}
+.right {
+    flex: 0.3;
+    background-color: maroon;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .left, .right {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .p1, .p2, .olist, h2 .info {
+        font-size: 1vw;
+    }
+}
+
+footer {
+    margin: 20px;
+    display: inline;
+
+}
+h1 {
+    color: saddlebrown;
+
+}
+h2 {
+    font-size: max(1vw,15px);
+    font-family: Arial;
+    color: grey;
+    margin: 0;
+    display: inline;
+    padding: 0;
+}
+h3 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+p {
+    padding-bottom: 20px;
+}
+.obrstred {
+    display: block;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.imgmain {
+    width: 100%;
+}
+.imgleft {
+    width: 30%;
+    display:block;
+    float: left;
+    margin: 10px;
+}
+.imgright {
+    width: 30%;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+.backmm {
+    margin: 20px;
+    background-color: darkgray;
+    border: solid 1px red;
+    color: black;
+    font-family: Arial;
+    font-style: italic;
+}
+
+.p1 {
+    font-size: max(1vw,15px);
+}
+
+.p2 {
+    font-size: max(1vw,15px);
+}
