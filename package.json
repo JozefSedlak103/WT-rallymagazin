@@ -1,8 +1,8 @@
 {
-  "name": "wt-rallymagazin",
+  "name": "rallymag",
   "version": "1.0.0",
   "description": "",
-  "main": "articles.html",
+  "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
